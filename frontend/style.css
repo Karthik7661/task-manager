@@ -1,0 +1,190 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 60px 0;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+}
+
+/* HEADER */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 35px;
+    margin-bottom: 35px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* ================= INPUTS ================= */
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    border: 2px solid #d1d5db;   /* CLEAR BORDER */
+    font-size: 15px;
+    background: #ffffff;         /* PURE WHITE */
+    color: #111827;              /* DARK TEXT */
+    transition: 0.25s ease;
+}
+
+/* PLACEHOLDER */
+input::placeholder,
+textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* TEXTAREA SIZE */
+textarea {
+    resize: none;
+    height: 110px;
+}
+
+/* HOVER EFFECT */
+input:hover,
+textarea:hover,
+select:hover {
+    border-color: #9ca3af;
+}
+
+/* FOCUS EFFECT */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 0 4px rgba(118,75,162,0.15);
+    outline: none;
+}
+
+/* ROW */
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.row select {
+    flex: 1;
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.25s ease;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* ================= TASK CARD ================= */
+
+.task {
+    background: #f8f9ff;
+    padding: 22px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    border-left: 6px solid #667eea;
+    transition: 0.3s;
+}
+
+.task:hover {
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* STATUS BADGE */
+.status {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* STATUS COLORS */
+.status.PENDING {
+    background: #fff4e5;
+    color: #ff9800;
+}
+
+.status.IN_PROGRESS {
+    background: #e3f2fd;
+    color: #2196f3;
+}
+
+.status.COMPLETED {
+    background: #e8f5e9;
+    color: #4caf50;
+}
+
+/* PRIORITY */
+.priority {
+    font-size: 12px;
+    color: #555;
+}
+
+/* ACTION BUTTONS */
+.actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 14px;
+}
+
+.actions button {
+    font-size: 13px;
+    padding: 8px 16px;
+}
+
+/* DELETE BUTTON */
+.actions button:last-child {
+    background: #ff5252;
+}
+
+.actions button:last-child:hover {
+    background: #e53935;
+}
